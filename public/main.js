@@ -38,7 +38,9 @@ $(function(){
 
         
 
-      
+      $(document).ready(function(){
+             $("img").css("border","3px solid black");
+             });
 
       $(document).ready(function(){
               $(".tree").mouseover(function(){
@@ -53,7 +55,7 @@ $(function(){
                     });
                 });
        $("#btn-hide").click(function(){
-        $(".contenedor1").hide();
+        $(".contenedor").hide();
        });
 
        $(".segundo").mouseenter(function(){
@@ -64,13 +66,13 @@ $(function(){
 
                 $("p").on({
                     mouseenter: function(){
-                      $(this).css("background-color", "grey");
+                      $(this).css("background-color", "blue");
                      }, 
                     mouseleave: function(){
                        $(this).css("background-color", "");
                     }, 
                     click: function(){
-                      $(this).css("background-color", "red");
+                      $(this).css("background-color", "yellow");
                     } 
                   }); 
        
